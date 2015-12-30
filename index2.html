@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+<link href="../site.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+<script src="../jqscript.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+	<div class="swingSpective" id="firstStop">
+	<div id="sign"><div class="signtext">Login Thyself<img id="signicon" src="../crossedswords.png"></div></div>
+</div>
+<div id="inputarea">
+	<form action="{$_SERVER['PHP_SELF']}" method="POST">
+		<div class="cred">Username: <input type="text" name="username" class="style1"></div>
+		<div class="cred">Password: <input type="password" name="password" class="style1"></div>
+<input type="submit" name="submit" value="Login"> <br><div id="notification"></div>
+&nbsp<a href="register.php">Register</a> &nbsp<a href="forgot_password.php">Forgot your login?</a>
+</form>
+<div class="hidden"><div style="margin-top:0px;" class="errorMessage">{$error}</div></div>
+<div class="hidden"><div style="margin-top:0px;" class="errorMessage">{$message}</div></div>
+</div>
+
+
+
+</div>
+
+<ol class="joyride-list" data-joyride>
+  <li data-id="firstStop" data-text="Next" data-options="tip_location: top; prev_button: false">
+    <p>Hello and welcome to the Joyride <br>documentation page.</p>
+  </li>
+  <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-prev-text="Prev">
+    <h4>Stop #1</h4>
+    <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+  </li>
+  <li data-id="numero2" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+    <h4>Stop #2</h4>
+    <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+  </li>
+  <li data-button="End" data-prev-text="Prev">
+    <h4>Stop #3</h4>
+    <p>It works as a modal too!</p>
+  </li>
+</ol>
+
+
+<script src="../dandd.js"></script>
+<script src="../controllers.js"></script>
+<script src="../script.js"></script>
+<script src="../foundation/js/foundation/foundation.joyride.js"></script>
+<script src="../foundation/js/foundation/foundation.js"></script>
+<script src="../foundation/js/vendor/jquery.js"></script>
+
+
+<script>
+	$(document).foundation();
+	$(document).foundation('joyride', 'start');
+</script>
+
+</body>
+<footer id="foot01"></footer>
+</html>

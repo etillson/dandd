@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 $body = <<<EOT
 <body>
+This is a change
 <div id="main">
 	<div class="swingSpective" id="firstStop">
 	<div id="sign"><div class="signtext">Login Thyself<img id="signicon" src="../crossedswords.png"></div></div>

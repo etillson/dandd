@@ -19,6 +19,7 @@ dragModule.directive('myDraggable', ['$document', function($document) {
       element.on('dblclick', function(event)){
       function mousemove(event) {
         // Prevent default dragging of selected content
+        //stupid comment
         event.preventDefault();
         startX = event.pageX - x;
         startY = event.pageY - y;

@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
 if (empty($_POST['username']) || empty($_POST['password']))
 {
 	//header("location: poo.php");
-  $error = "Thou sir name or encantation of entry escapeth thee?";
+  $error = "Thou sir name or encantation of entry escapeth thee, yes?";
 }
 else
 {
